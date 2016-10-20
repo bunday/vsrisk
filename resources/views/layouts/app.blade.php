@@ -44,6 +44,12 @@
         .navbar-default .navbar-nav>li>a{
             color: wheat;
         }
+        .progress-bar-mine{
+            background-color: #808080;
+        }
+        .num{
+            color: #722F37;
+        }
         
     </style>
 </head>
