@@ -8,6 +8,8 @@
                 <div class="panel-heading">Welcome</div>
 
                 <div class="panel-body">
+                <form class="form-horizontal" role="form" method="post" action="{{ url('/scale') }}">
+                {{ csrf_field() }}
                   <div class="lead">
                     <i> Management Scales</i></div>
                     <div>
@@ -15,7 +17,7 @@
                             <div class="col-md-3"><h3> Likelihood</h3></div> 
                             <div class="col-md-3"></div>
                             <div class="col-md-3"></div>
-                            <div class="col-md-3"><button class="btn btn-primary" onclick="def();"> Apply Default Likelihood</button></div>
+                            <div class="col-md-3"><label class="btn btn-primary" onclick="def();"> Apply Default Likelihood</label></div>
                         </div>
                         <div class="row">
                         <div class="progress col-md-9">
@@ -35,7 +37,7 @@
                             <div class="col-md-3"><h3> Impact</h3></div> 
                             <div class="col-md-3"></div>
                             <div class="col-md-3"></div>
-                            <div class="col-md-3"><button class="btn btn-primary" onclick="defi();"> Apply Default Impact</button></div>
+                            <div class="col-md-3"><label class="btn btn-primary" onclick="defi();"> Apply Default Impact</label></div>
                         </div>
                         <div class="row">
                         <div class="progress col-md-9">
@@ -53,7 +55,7 @@
                           <div class="col-md-3"></div>
                           <div class="col-md-3"></div>
                           <div class="col-md-3"></div>
-                          <button class="btn btn-primary col-md-3" id="change" onclick="show();">Edit</button>
+                          <label class="btn btn-primary col-md-3" id="change" onclick="show();">Edit</label>
                           <div class="col-md-3"></div>
                         </div>
                         <div class="panel panel-default" id="wrapper">
@@ -127,17 +129,21 @@
                         </div>
                         <div class="row">
                         <div class="col-md-4"></div>
-                         <button class="btn btn-primary col-md-4" align="centre" onclick="changeimp();">Change Likelihood and Impact Text</button>
+                         <label class="btn btn-primary col-md-4" align="centre" onclick="changeimp();">Change Likelihood and Impact Text</label>
                          <div class="col-md-4"></div>
                          </div>
                             </div>
                         </div>
                            
                     </div>
-                <div class="row">
-                  
-
-                </div>
+                <div class="form-group">
+                  <div class="col-md-6 col-md-offset-4">
+                      <button type="submit" class="btn btn-primary">
+                          <i class="fa fa-btn fa-arrow-right"></i> Next
+                      </button>
+                  </div>
+              </div>
+                </form>
                 </div>
             </div>
         </div>
