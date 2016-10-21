@@ -20,6 +20,9 @@ Route::get('/upload', function(){
 Route::get('/scale', function(){
 	return view('scale');
 });
+Route::get('/maths', function(){
+	return view('maths');
+});
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
