@@ -13,14 +13,14 @@
                     
                     
 
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
+                    <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data" action="{{ url('/importExcel') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('iso') ? ' has-error' : '' }}">
                             <label for="iso" class="col-md-3 control-label">Select Control From File</label>
 
                             <div class="col-md-6">
-                                <input id="iso" type="file" class="form-control" name="iso" value="{{ old('iso') }}" accept=".xlsx">
+                                <input id="iso" type="file" class="form-control" name="iso" value="{{ old('iso') }}" accept=".csv">
 
                                 @if ($errors->has('iso'))
                                     <span class="help-block">
@@ -28,7 +28,7 @@
                                     </span>
                                 @endif
                             </div>
-                            <label class="col-md-3"><p class="beem">*.csv,*.xls</p></label>
+                            <label class="col-md-3"><p class="beem">*.csv only</p></label>
                         </div>
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
@@ -37,7 +37,8 @@
                                 </button>
                             </div>
                         </div>
-                        </form>
+                    </form>
+                    <a href="{{ url('/scale') }}"><label class="btn btn-primary">Skip</label></a>
                 </div>
             </div>
         </div>

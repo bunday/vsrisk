@@ -23,3 +23,7 @@ Route::get('/scale', function(){
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('/importExcel', 'HomeController@importExcel');
+
+Route::post('/scale', 'HomeController@management_scale');
