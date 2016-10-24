@@ -12,13 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('newhome');
 });
 Route::get('/upload', function(){
 	return view('upload');
 });
 Route::get('/scale', function(){
 	return view('scale');
+});
+Route::get('/maths', function(){
+	return view('maths');
 });
 Route::auth();
 

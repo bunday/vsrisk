@@ -8,12 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    @for($i = 7; $i > 0; $i--)
-                        @for($j = $i; $j <= ($i + 7 - 1) ; $j++)
-                            <a href="{{ url('/treshold' . $j) }}"><label class="btn btn-primary">{{ $j }}</label></a>
-                        @endfor
-                        <br/>
-                    @endfor
+                    You are logged in!
                 </div>
             </div>
         </div>
