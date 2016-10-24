@@ -14,10 +14,13 @@
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
-
+    <link rel="stylesheet" href="riskassessment.css">
+    <link rel="stylesheet" href="toggle.css">
+    
     <style>
         body {
             font-family: 'Lato';
+            background-color: #D6D6d6;
         }
         .beem{
             color: red;
@@ -129,6 +132,7 @@
         <div class="col-md-6" align="Right">Contact Support | Share</div>
     </div>
     <!-- JavaScripts -->
+    <script type="text/javascript" src="forasset.js" ></script>
     <script type="text/javascript" src="progress.js" ></script>
     <script type="text/javascript" src="maths.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>

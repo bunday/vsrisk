@@ -74,24 +74,21 @@ function setAva(num){
 	document.getElementById("roundava").innerHTML=num;
 }
 
-var form_user = false;
-function userManage() {
-    var formNewUser = document.getElementById("form-new-user");
-    if(!form_user) {
-        if(del == true) {
-            document.getElementById("form-delete").style.display="none";
-        }
-        formNewUser.style.display='block';
-        form_user = true;
+var table_user = false;
+function userTable() {
+    var tab = document.getElementById("ass");
+    if(!table_user) {
+        tab.style.display='block';
+        table_user = true;
     } else {
-        formNewUser.style.display = "none";
-        form_user = false;
+        tab.style.display = "none";
+        table_user = false;
     }
 }
 
 var io = false;
 function addAsset() {
-    var assA = document.getElementById("ass");
+    var assA = document.getElementById("addass");
     if(!io) {
         assA.style.display='block';
         io = true;
@@ -105,9 +102,6 @@ var del = false;
 function deleteAsset() {
     var assD = document.getElementById("form-delete");
     if(!del) {
-        if (form_user == true) {
-            document.getElementById("form-new-user").style.display="none";
-        }
         assD.style.display='block';
         del = true;
     } else {
@@ -115,6 +109,21 @@ function deleteAsset() {
         del = false;
     }   
 }
+
+var au = false;
+function addUser() {
+    var form_user = document.getElementById("form-new-user");
+    if(!au) {
+        form_user.style.display="block";
+        document.getElementById("gone").style.display="none";
+        au = true;
+    } else {
+        form_user.style.display="none";
+        au = false;
+    }
+}
+
+
 //function toggleState(item){
   //  if(item.className == "on") {
    //     item.className="off";
