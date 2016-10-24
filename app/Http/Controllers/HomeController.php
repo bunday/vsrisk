@@ -73,4 +73,8 @@ class HomeController extends Controller
 
         return redirect('/home');
     }
+
+    public function assessment(){
+        return view('assessment');
+    }
 }
