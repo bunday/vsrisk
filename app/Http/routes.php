@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('newhome');
 });
 Route::get('/upload', function(){
 	return view('upload');
@@ -20,6 +20,19 @@ Route::get('/upload', function(){
 Route::get('/scale', function(){
 	return view('scale');
 });
+Route::get('/maths', function(){
+	return view('maths');
+});
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('/importExcel', 'HomeController@importExcel');
+
+Route::post('/scale', 'HomeController@management_scale');
+
+Route::get('/assessment', 'HomeController@assessment');
+
+Route::get('assets', function(){
+	return view('assets');
+});

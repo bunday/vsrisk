@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.inapp')
 
 @section('content')
 <div class="container">
@@ -8,7 +8,12 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    @for($i = 7; $i > 0; $i--)
+                        @for($j = $i; $j <= ($i + 7 - 1) ; $j++)
+                            <a href="{{ url('/treshold' . $j) }}"><label class="btn btn-primary">{{ $j }}</label></a>
+                        @endfor
+                        <br/>
+                    @endfor
                 </div>
             </div>
         </div>
