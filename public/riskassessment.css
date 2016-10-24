@@ -1,0 +1,51 @@
+.panel-left {
+	width: 250px;
+	/*border-right: 5px #722F37 solid;*/
+	float: left;
+	height: 500px;
+}
+
+.panel-left .panel-view {
+	padding-left: 10px;
+}
+
+.panel-view #manage{
+	margin-top: 5px;
+}
+
+.panel-view #manage #form-new-user, .panel-view #manage #form-delete {
+	display: none;
+	width: 380px;
+	padding: 20px;
+	background-color: #D6D6D6;
+}
+
+.panel-view #manage #form-delete .ass-delete-list {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.panel-view #usermanagement, .panel-view #addasset, .panel-view #deleteasset {
+	border: 2px solid #722F37;
+	width: 55px;
+	height: 55px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+}
+.panel-view form #v {
+	padding-left: 5px; 
+	margin-left: 5px;
+	width: 113px;
+}
+
+.panel-view form input, #form-new-user select {
+	width: 220px; height: 25px; font-style: italic; padding-left: 20px;
+}
+
+#form-new-user input, #form-new-user select {
+	width: 220px; height: 30px; font-style: italic; padding-left: 20px;
+}
+
+/*#form-new-user .on  { background:blue; }
+
+#form-new-user .off { background:red; }
+*/
