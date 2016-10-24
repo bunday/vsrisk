@@ -36,7 +36,14 @@ function dynamicmatrix(){
 		     
 		     elem.style.width = "50px";
 		     elem.style.height = "50px";
-		     elem.onclick = changer(elem.value);
+		     elem.onclick = function(){
+		     //Problem HERE!!!	
+		     // what do you intedn to do here ?
+
+		     //i want it to add a "finction" that will parse its value anytime it is clicked, so i can
+		     //change the var highest to the value in it, and refresh the page
+		     
+		     }
 		     elem.id = j;
 		     docFrag.appendChild(elem);
 		     var d = "a"+i;

@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('newhome');
 });
 Route::get('/upload', function(){
 	return view('upload');
