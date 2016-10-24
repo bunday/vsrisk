@@ -121,9 +121,8 @@
 
     @yield('content')
     <div id="footer" class="row">
-        <div class="col-md-3">© "Our Name", 2016. All Rights Reserved.</div>
-        <div class="col-md-2"></div><div class="col-md-1"></div>
-        
+        <div class="col-md-3">@bundayy_ || @jaymykels || @Alade_Of_God</div>
+        <div class="col-md-3">All Rights Reserved.</div>
         <div class="col-md-6" align="Right">Contact Support | Share</div>
     </div>
     <!-- JavaScripts -->
