@@ -17,8 +17,9 @@
                             <select class="form-control" id="fml" onchange="">
                               <option>[likelihood + impact] - 1</option>
                               <option>[likelihood + impact]</option>
-                              <option>[likelihood * impact] - 1</option>
                               <option>[likelihood * impact]</option>
+                              <option>[likelihood]</option>
+                              <option>[impact]</option>
                             </select></div>
                             <input type="hidden" name="clike" id="clike" value="7">
                             <input type="hidden" name="cimp" id="cimp" value="7">
@@ -28,22 +29,14 @@
                         </div>
                         <br/><br/>
                         <div class="row">
-                            <div class="col-md-3">Likelihood</div>
-                            <div class="col-md-9">Graph Here
+                           
+                            <div class="col-md-12"><a href="#">Graph Here</a>
                                 <br/><br/>
                                 <div class="row"> 
-                                <div class="col-md-1">
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">7</div><br/>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">6</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">5</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">4</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">3</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">2</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">1</div>
-                                    <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">X</div>
-                                </div>
-                            <div class="col-md-9" id="holder">
+                               
+                            <div class="col-md-12" id="holder">
                             <div class="row">
+
                                 <div class="col-md-1" id="a1"></div>
                                 <div class="col-md-1" id="a2"></div>
                                 <div class="col-md-1" id="a3"></div>
@@ -51,23 +44,14 @@
                                 <div class="col-md-1" id="a5"></div>
                                 <div class="col-md-1" id="a6"></div>
                                 <div class="col-md-1" id="a7"></div>
+                                
                                 </div>
-                                <div>
-                                <div class="col-md-1 btn btn-primary" style="width: 55px; height: 50px;">1</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 55px; height: 50px;">2</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">3</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 50px; height: 50px;">4</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 55px; height: 50px;">5</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 55px; height: 50px;">6</div>
-                                <div class="col-md-1 btn btn-primary" style="width: 52px; height: 50px;">7</div>
-
-                            </div>
+                                
                             </div>
 
                             
                             </div>
                             </div>
-                            <div class="col-md-3">1</div>
                             
                         </div>
 

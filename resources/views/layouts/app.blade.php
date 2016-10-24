@@ -110,6 +110,47 @@
     </div>
     <!-- JavaScripts -->
     <script type="text/javascript" src="progress.js" ></script>
+    <script type="text/javascript">
+        var mode;
+var highest;
+function dynamicmatrix(){
+    var box = [];
+    doc = document,docFrag = document.createDocumentFragment();
+    var d = 0;
+    for(i=like; i>0; i--){
+        for(j=imp; j>0; j--){
+            var elem = doc.createElement('input');
+             elem.type = 'button';
+             var ch = gitt(parseInt(i),parseInt(j),mode);
+             elem.value = ch;
+             if (ch>highest){
+                elem.className = "btn btn-danger";
+             }else{
+                elem.className = "btn btn-success"; 
+             }
+             elem.setAttribute("href","setter/"+ch);
+             elem.style.width = "70px";
+             elem.style.height = "50px";
+             elem.id = i+"-"+j;
+             var g = i+"-"+j;
+             box[g] = ch;
+             elem.onclick = function(){
+                var k = document.getElementById(this.id);
+                highest = k.value;
+                clearit();
+                dynamicmatrix();
+                alert(k.value);
+             }
+            
+             docFrag.appendChild(elem);
+             var d = "a"+i;
+             document.getElementById(d).appendChild(docFrag);
+        }
+    }
+}
+
+
+    </script>
     <script type="text/javascript" src="maths.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
