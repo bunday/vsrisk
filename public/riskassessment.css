@@ -1,8 +1,48 @@
+.selectBox {
+    position: relative;
+}
+.multiselect label{
+    padding-left: 20px;
+}
+.selectBox select {
+    width: 100%;
+    font-weight: bold;
+}
+.overSelect {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+}
+#checkboxes {
+    display: none;
+    border: 1px #dadada solid;
+}
+#checkboxes label {
+    display: block;
+}
+#checkboxes label:hover {
+    background-color: #1e90ff;
+}
+#groupassess #conf{ padding-bottom: 10px; }
+#groupassess #conf #roundconf, #groupassess #conf #roundint, #groupassess #conf #roundava {
+    -webkit-border-radius: 20px 20px 20px 20px;
+    border-radius: 20px 20px 20px 20px;
+    text-align: center; font-size: 18px; font-style: bold;
+    background-color: #D6D6D6; color: black; width: 30px; height: 30px;
+}
+#groupassess #conf #roundconf { margin-left: 20px; }
+#groupassess #conf #roundint { margin-left: 60px; }
+#groupassess #conf #roundava { margin-left: 45px; }
+
 .panel-left {
 	width: 250px;
 	/*border-right: 5px #722F37 solid;*/
 	float: left;
 	height: 500px;
+}
+
+.active-owner:hover {
+	background-color: #D6D6D6;
+	border-left-color: red;
 }
 
 .panel-left .panel-view {
@@ -13,7 +53,7 @@
 	margin-top: 5px;
 }
 
-.panel-view #manage #form-new-user, .panel-view #manage #form-delete {
+.panel #form-new-user, .panel-view #manage #form-delete {
 	display: none;
 	width: 380px;
 	padding: 20px;
@@ -37,12 +77,28 @@
 	width: 113px;
 }
 
-.panel-view form input, #form-new-user select {
+.panel form input, #form-new-user select {
 	width: 220px; height: 25px; font-style: italic; padding-left: 20px;
 }
 
 #form-new-user input, #form-new-user select {
 	width: 220px; height: 30px; font-style: italic; padding-left: 20px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
 /*#form-new-user .on  { background:blue; }
