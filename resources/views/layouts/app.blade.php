@@ -54,7 +54,11 @@
             position: relative;
             min-height: 0.5px;
         }
-        
+        .vertical-text {    
+                transform: rotate(90deg);
+                transform-origin: left top 0;
+            }
+            
     </style>
 </head>
 <body id="app-layout">
@@ -139,7 +143,7 @@ function dynamicmatrix(){
                 highest = k.value;
                 clearit();
                 dynamicmatrix();
-                alert(k.value);
+                //alert(k.value);
              }
             
              docFrag.appendChild(elem);
@@ -151,7 +155,9 @@ function dynamicmatrix(){
 
 
     </script>
-    <script type="text/javascript" src="maths.js" ></script>
+
+    <script type="text/javascript" src="action/Chart.js"></script>
+    <script type="text/javascript" src="action/maths.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}

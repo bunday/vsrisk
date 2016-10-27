@@ -66,23 +66,23 @@ function solve(){
 	if(key==0){
 		result = (parseInt(like)+ parseInt(imp)) - 1;
 		mode =0;
-		alert(result);
+		//alert(result);
 	}else if(key==1){
 		result = parseInt(like)+parseInt(imp);
 		mode = 1;
-		alert(result);
+		//alert(result);
 	}else if(key==2){
 		result = like*imp;
 		mode = 2;
-		alert(result);
+		//alert(result);
 	}else if(key==3){
 		result = like;
 		mode = 3;
-		alert(result);
+		//alert(result);
 	}else{
 		result = imp;
 		mode = 4;
-		alert(result);
+		//alert(result);
 	}
 	//gitt(3,5,mode);
 	
