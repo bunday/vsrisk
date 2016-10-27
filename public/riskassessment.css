@@ -29,9 +29,9 @@
     text-align: center; font-size: 18px; font-style: bold;
     background-color: #D6D6D6; color: black; width: 30px; height: 30px;
 }
-#groupassess #conf #roundconf { margin-left: 20px; }
-#groupassess #conf #roundint { margin-left: 60px; }
-#groupassess #conf #roundava { margin-left: 45px; }
+#groupassess #conf #roundconf { margin-left: 23px; }
+#groupassess #conf #roundint { margin-left: 26px; }
+#groupassess #conf #roundava { margin-left: 30px; }
 
 .panel-left {
 	width: 250px;
