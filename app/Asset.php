@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Likelihood extends Model
+class Asset extends Model
 {
     //
     public function organisation(){
