@@ -11,9 +11,18 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/newhome', function () {
     return view('newhome');
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/assessment', function() {
+	return view('assessment');
+});
+
 Route::get('/upload', function(){
 	return view('upload');
 });
@@ -31,7 +40,7 @@ Route::post('/importExcel', 'HomeController@importExcel');
 
 Route::post('/scale', 'HomeController@management_scale');
 
-Route::get('/assessment', 'HomeController@assessment');
+//Route::get('/assessment', 'HomeController@assessment');
 
 Route::get('assets', function(){
 	return view('assets');
