@@ -14,8 +14,10 @@ class CreateImpactsTable extends Migration
     {
         Schema::create('impacts', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('organisation_id');
             $table->integer('scale');
-            $table->string('isms_no');
+            $table->integer('value');
+            $table->string('text');
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLikelihoodsTable extends Migration
+class CreateCriteriasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,10 @@ class CreateLikelihoodsTable extends Migration
      */
     public function up()
     {
-        Schema::create('likelihoods', function (Blueprint $table) {
+        Schema::create('criterias', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('criteria');
             $table->integer('organisation_id');
-            $table->integer('scale');
-            $table->integer('value');
-            $table->string('text');
             $table->timestamps();
         });
     }
@@ -29,6 +27,6 @@ class CreateLikelihoodsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('likelihoods');
+        Schema::drop('criterias');
     }
 }

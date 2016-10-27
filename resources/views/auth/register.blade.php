@@ -23,15 +23,15 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="form-group{{ $errors->has('isms') ? ' has-error' : '' }}">
-                            <label for="isms" class="col-md-4 control-label">ISMS Name</label>
+                        <div class="form-group{{ $errors->has('abv') ? ' has-error' : '' }}">
+                            <label for="abv" class="col-md-4 control-label">ISMS Name</label>
 
                             <div class="col-md-6">
-                                <input id="isms" type="text" class="form-control" name="isms" value="{{ old('isms') }}">
+                                <input id="abv" type="text" class="form-control" name="abv" value="{{ old('abv') }}">
 
-                                @if ($errors->has('isms'))
+                                @if ($errors->has('abv'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('isms') }}</strong>
+                                        <strong>{{ $errors->first('abv') }}</strong>
                                     </span>
                                 @endif
                             </div>
@@ -95,6 +95,7 @@
 
                             <div class="col-md-6">
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
+                                <
 
                                 @if ($errors->has('password_confirmation'))
                                     <span class="help-block">
@@ -103,7 +104,12 @@
                                 @endif
                             </div>
                         </div>
-                        <input type="hidden">
+
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <input type="hidden" class="form-control" name="type" value="Admin">
+                            </div>
+                        </div>
 
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">

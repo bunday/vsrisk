@@ -15,7 +15,7 @@ class CreateFormularsTable extends Migration
         Schema::create('formulars', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('value');
-            $table->integer('isms_no');
+            $table->integer('organisation_id');
             $table->timestamps();
         });
     }

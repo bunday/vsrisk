@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\organisation;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -54,7 +55,8 @@ class AuthController extends Controller
             'password' => 'required|min:6|confirmed',
             'fullname' => 'required|max:255',
             'organisation' => 'required|max:255',
-            'isms' => 'required|max:255',
+            'abv' => 'required|max:255',
+            'type' => 'required|max:255',
         ]);
     }
 
@@ -66,14 +68,18 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+        organisation::create([
+            'name' => $data['organisation'],
+            'abv' => $data['abv'],
+            ]);
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'fullname' => $data['fullname'],
-            'organisation' => $data['organisation'],
-            'type' => 'admin',
-            'isms' => $data['isms'],
+            'organisation_id' => organisation::where('name', $data['organisation'] )->first()->id,
+            'type' => $data['type'],
         ]);
     }
 }
