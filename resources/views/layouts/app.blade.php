@@ -141,6 +141,9 @@ function dynamicmatrix(){
              elem.onclick = function(){
                 var k = document.getElementById(this.id);
                 highest = k.value;
+                var high = document.getElementById("tresh");
+                high.value = highest;
+                alert(high.value);
                 clearit();
                 dynamicmatrix();
                 //alert(k.value);
@@ -151,6 +154,10 @@ function dynamicmatrix(){
              document.getElementById(d).appendChild(docFrag);
         }
     }
+}
+function savetresh(){
+    
+    alert(highest);
 }
 
 

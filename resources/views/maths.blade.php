@@ -21,7 +21,7 @@
                               <option>[likelihood]</option>
                               <option>[impact]</option>
                             </select></div>
-                            <input type="hidden" name="clike" id="clike" value="6">
+                            <input type="hidden" name="clike" id="clike" value="7">
                             <input type="hidden" name="cimp" id="cimp" value="7">
                             <div class="col-md-3">
                                 <button class="btn btn-primary" onclick="clearit(); solve();  gitt();dynamicmatrix();">Calculate</button>
@@ -46,9 +46,12 @@
                                     <div class="col-md-1" id="a6"></div>
                                     <div class="col-md-1" id="a7"></div> 
                                 </div><div><p class="lead" align="left-center">Impact</p></div>
-                                        
+                                        <form method="POST" action="/criteria">
+                                        <input type="hidden" name="tresh" id="tresh">
+                                        <button class="btn btn-primary" align="right"> Proceed </button>
+                                    </form>
                                     </div>
-
+                                    
                             
                                 </div>
                             </div>
