@@ -343,8 +343,10 @@
 			             		<thead id="table-head"><tr><th>Full Name</th><th>UserName</th><th>Role</th><th>Last Login</th></tr></thead>
 			             		<tr class="table-row"><td>Dimeji Uwem</td><td>dimeji</td><td>Administrator</td><td>11.02.2016</td></tr>
 			             		<tr class="table-row"><td>Ezeokoye Micheal</td><td>Jaymikels</td><td>Administrator</td><td>11.02.2016</td></tr>
-			             		<tr class="table-row"><td>Olayinka Zadat</td><td>Bunday</td><td>Administrator</td><td>10.01.2016</td></tr>
 			             		<tr class="table-row"><td>Akintola Femi</td><td>Alade</td><td>Administrator</td><td>11.03.2012</td></tr>
+			             		<tr class="table-row"><td>Olayinka Zadat</td><td>Bunday</td><td>Administrator</td><td>10.01.2016</td></tr>
+			             		<tr class="table-row"><td>Gboyega</td><td>gboyega</td><td>Administrator</td><td>11.02.2016</td></tr>
+			             		<tr class="table-row"><td>Stanley Okoro</td><td>ostan</td><td>Administrator</td><td>11.02.2016</td></tr>
 			             	</table>
 			            
 		                </div>
