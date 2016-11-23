@@ -97,13 +97,15 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                
+                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{ url('/') }}">
+                    Organization Name
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="#">Organization Name</a></li>
+                <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
@@ -127,15 +129,13 @@
 
     @yield('content')
     <div id="footer" class="row">
-        <div class="col-md-3">@bundayy_ || @jaymykels || @Alade_Of_God</div>
-        <div class="col-md-3">All Rights Reserved.</div>
+        <div class="col-md-3">© "Our Name", 2016. All Rights Reserved.</div>
+        <div class="col-md-2"></div><div class="col-md-1"></div>
+        
         <div class="col-md-6" align="Right">Contact Support | Share</div>
     </div>
     <!-- JavaScripts -->
-<<<<<<< HEAD
-=======
     <script type="text/javascript" src="action/forasset.js" ></script>
->>>>>>> 23ae8c2a3fb0aec4168d08002a43dcead535f147
     <script type="text/javascript" src="action/progress.js" ></script>
     <script type="text/javascript" src="action/maths.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
