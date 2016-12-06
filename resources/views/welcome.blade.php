@@ -14,7 +14,7 @@
                         <div class="col-xs-6">
                         <div>
                         <a href="/register">
-                            <img src="plus.png">
+                            <img src="pluss.png">
                             <p align="bottom left"> Add a new ISMS</p></a>
                             </div>
                         </div>

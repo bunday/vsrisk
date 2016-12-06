@@ -18,9 +18,7 @@
 			<div id="manage">
 				<img src="images/user.png" id="usermanagement" name="usermanagement" onclick="userTable()" title="View Asset Owners">
 				<img id="addasset" name="addasset" onclick="addAsset()" src="images/addasset.png" title="Add New Asset">
-				</br><br>
-			
-				<!--<label id="deleteasset" name="deleteasset" onclick="deleteAsset()"><img src="deleteasset.png"></label>-->
+				<img id="deleteasset" name="deleteasset" onclick="deleteAsset()" src="deleteasset.png">
 				<?php
 					switch ('') {
 						case '':
